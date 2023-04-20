@@ -27,6 +27,7 @@
 		"@unocss/transformer-directives": "^0.50.6",
 		"commit-and-tag-version": "^11.0.0",
 		"mdsvex": "^0.10.6",
+		"mdsvexamples": "^0.3.3",
 		"prettier": "^2.8.4",
 		"prettier-plugin-svelte": "^2.8.1",
 		"prettier-plugin-tailwindcss": "^0.2.2",
