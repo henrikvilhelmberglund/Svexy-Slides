@@ -19,7 +19,10 @@ const config = {
 	},
 	vitePlugin: {
 		experimental: {
-			inspector: true,
+			inspector: {
+				toggleKeyCombo: "shift",
+				holdMode: true,
+			},
 		},
 	},
 	preprocess: [preprocess(), mdsvex(mdsvexConfig)],
