@@ -9,12 +9,12 @@ const dev = process.argv.includes("dev");
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  extensions: [".svelte", ...mdsvexConfig.extensions],
+	extensions: [".svelte", ...mdsvexConfig.extensions],
 	kit: {
 		adapter: adapter(),
 		paths: {
 			// change path below to your github repo if using Github Pages
-			base: dev ? "" : "/sveltekit-unocss-template",
+			base: dev ? "" : "/svexy-slides",
 		},
 	},
 	vitePlugin: {
