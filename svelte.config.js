@@ -2,11 +2,14 @@
 // import adapter from '@sveltejs/adapter-auto';
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-static";
+import { mdsvex } from "mdsvex";
+import mdsvexConfig from "./mdsvex.config.js";
 
 const dev = process.argv.includes("dev");
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  extensions: [".svelte", ...mdsvexConfig.extensions],
 	kit: {
 		adapter: adapter(),
 		paths: {
@@ -19,7 +22,7 @@ const config = {
 			inspector: true,
 		},
 	},
-	preprocess: preprocess(),
+	preprocess: [preprocess(), mdsvex(mdsvexConfig)],
 };
 
 export default config;
