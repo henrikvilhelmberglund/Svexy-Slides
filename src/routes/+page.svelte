@@ -16,9 +16,17 @@
 	<div class="slides">
 		{#each data.slides as slide}
 			<section data-auto-animate>
-				{#each slide as element}
-					{@html element}
-				{/each}
+				{#if slide.join("").includes("<br")}
+					<!-- if we see a <br /> tag we want to make a new section around each previous and following block -->
+					{@const splits = slide.join("").split(/<br[^>]*>/i)}
+					{#each splits as split}
+						<section>{@html split}</section>
+					{/each}
+				{:else}
+					{#each slide as element}
+						{@html element}
+					{/each}
+				{/if}
 			</section>
 		{/each}
 	</div>
