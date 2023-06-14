@@ -12,6 +12,8 @@ more text awawa
 
 ---
 
+<p class="text-blue-500">more text awawa</p>
+
 <h1 class="text-red-500">Auto animate</h1>
 
 ## second slide :)
@@ -33,6 +35,14 @@ very cool
 # nice
 
 <Seriously>Does this work?</Seriously>
+
+<br />
+
+does this?
+
+<br />
+
+wait it does???
 
 <style>
 </style>
