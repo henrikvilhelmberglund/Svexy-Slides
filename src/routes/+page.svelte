@@ -7,7 +7,7 @@
 	export let data;
 
 	onMount(() => {
-		let deck = new Reveal({ hash: true });
+		let deck = new Reveal({ hash: true, navigationMode: "linear" });
 		deck.initialize();
 	});
 </script>
