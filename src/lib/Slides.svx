@@ -1,0 +1,29 @@
+<script>
+  
+</script>
+
+# first slide
+
+does it work?
+
+<p class="text-4xl bg-red-500">this is some text </p>
+
+more text awawa
+
+---
+
+## second slide :)
+
+lol
+
+---
+
+now we third
+
+awawaw
+
+very cool
+
+<style>
+  
+</style>
