@@ -15,7 +15,7 @@
 <div class="reveal">
 	<div class="slides">
 		{#each data.slides as slide}
-			<section>
+			<section data-auto-animate>
 				{#each slide as element}
 					{@html element}
 				{/each}
