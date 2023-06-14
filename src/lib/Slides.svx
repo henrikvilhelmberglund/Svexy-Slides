@@ -1,8 +1,8 @@
 <script>
-  
+  import Seriously from "/src/lib/Seriously.svelte";
 </script>
 
-# first slide
+# Auto animate
 
 does it work?
 
@@ -12,9 +12,13 @@ more text awawa
 
 ---
 
+<h1 class="text-red-500">Auto animate</h1>
+
 ## second slide :)
 
 lol
+
+<p class="text-4xl bg-amber-500">this is some text </p>
 
 ---
 
@@ -24,6 +28,11 @@ awawaw
 
 very cool
 
+---
+
+# nice
+
+<Seriously>Does this work?</Seriously>
+
 <style>
-  
 </style>
