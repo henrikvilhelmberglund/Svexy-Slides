@@ -1,7 +1,30 @@
 <script>
+	import F from "./F.svelte";
+	import FList from "./FList.svelte";
 	import Slide from "./Slide.svx";
 	import V from "./V.svx";
   import Seriously from "/src/lib/Seriously.svelte";
+
+  let f = "fragment";
+  let out = "fragment fade-out";
+  let up = "fragment fade-up";
+  let down = "fragment fade-down";
+  let left = "fragment fade-left";
+  let right = "fragment fade-right";
+  let inout = "fragment fade-in-then-out";
+  let current = "fragment current-visible"
+  let insemiout = "fragment fade-in-then-semi-out";
+  let grow = "fragment grow";
+  let semiout = "fragment semi-fade-out";
+  let shrink = "fragment shrink";
+  let strike = "fragment strike";
+  let red = "fragment highlight-red";
+  let green = "fragment highlight-green";
+  let blue = "fragment highlight-blue";
+  let currentred = "fragment highlight-current-red";
+  let currentgreen = "fragment highlight-current-green";
+  let currentblue = "fragment highlight-current-blue";
+
 </script>
 
 <Slide>
@@ -44,19 +67,20 @@ very cool
 
 # nice
 
-<div class="fragment">
+<F>
   <Seriously>Does this work?</Seriously>
-</div>
+</F>
 
-<div class="fragment">
-  does this?
-</div>
+<F>My list:</F>
 
-<div class="fragment">
-wait it does???
-</div>
+<ul>
+  <li class={f}>does this?</li>
+  <li class={f}>wait it does???</li>
+</ul>
 
-<p class="fragment">Fade in</p>
+<F>
+  <p>Fade in</p>
+</F>
 
 </Slide>
 
