@@ -1,6 +1,7 @@
 <script>
 	import { base } from "$app/paths";
 	import Footer from "$lib/Footer.svelte";
+	import Slides from "$lib/Slides.svx";
 	import Reveal from "reveal.js";
 	import { onMount } from "svelte";
 
@@ -14,21 +15,7 @@
 
 <div class="reveal">
 	<div class="slides">
-		{#each data.slides as slide}
-			<section data-auto-animate>
-				{#if slide.join("").includes("<br")}
-					<!-- if we see a <br /> tag we want to make a new section around each previous and following block -->
-					{@const splits = slide.join("").split(/<br[^>]*>/i)}
-					{#each splits as split}
-						<section>{@html split}</section>
-					{/each}
-				{:else}
-					{#each slide as element}
-						{@html element}
-					{/each}
-				{/if}
-			</section>
-		{/each}
+		<Slides />
 	</div>
 </div>
 
