@@ -1,6 +1,10 @@
 <script>
+	import Slide from "./Slide.svx";
+	import V from "./V.svx";
   import Seriously from "/src/lib/Seriously.svelte";
 </script>
+
+<Slide>
 
 # Auto animate
 
@@ -10,7 +14,9 @@ does it work?
 
 more text awawa
 
----
+</Slide>
+
+<Slide>
 
 <p class="text-blue-500">more text awawa</p>
 
@@ -22,7 +28,9 @@ lol
 
 <p class="text-4xl bg-amber-500">this is some text </p>
 
----
+</Slide>
+
+<Slide>
 
 now we third
 
@@ -30,19 +38,35 @@ awawaw
 
 very cool
 
----
+</Slide>
+
+<Slide>
 
 # nice
 
-<Seriously>Does this work?</Seriously>
+<div class="fragment">
+  <Seriously>Does this work?</Seriously>
+</div>
 
-<br />
+<div class="fragment">
+  does this?
+</div>
 
-does this?
-
-<br />
-
+<div class="fragment">
 wait it does???
+</div>
+
+<p class="fragment">Fade in</p>
+
+</Slide>
+
+<Slide>
+<p class="fragment">Fade in</p>
+<p class="fragment fade-out">Fade out</p>
+<p class="fragment highlight-red">Highlight red</p>
+<p class="fragment fade-in-then-out">Fade in, then out</p>
+<p class="fragment fade-up">Slide up while fading in</p>
+</Slide>
 
 <style>
 </style>
