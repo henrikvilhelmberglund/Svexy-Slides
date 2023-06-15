@@ -1,4 +1,13 @@
-<div><slot /></div>
+<script>
+	let count = 0;
+	console.log(count);
+</script>
+
+<div>
+	<button on:click={() => (count += 1)} class="rounded bg-green-500 p-2 w-24 h-24 hover:bg-green-400">
+		{count}</button>
+	<slot />
+</div>
 
 <style>
 	div {
