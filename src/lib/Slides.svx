@@ -1,6 +1,5 @@
 <script>
 	import F from "./F.svelte";
-	import FList from "./FList.svelte";
 	import Slide from "./Slide.svx";
 	import V from "./V.svx";
   import Seriously from "/src/lib/Seriously.svelte";
