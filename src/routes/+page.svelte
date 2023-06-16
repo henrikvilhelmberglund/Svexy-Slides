@@ -1,25 +1,19 @@
 <script>
-	import { base } from "$app/paths";
-	import Footer from "$lib/Footer.svelte";
-	import Slides from "$lib/Slides.svx";
-	import Reveal from "reveal.js";
 	import { onMount } from "svelte";
 
 	export let data;
 
+	$: slides = data.slides;
+	let loaded = false;
 	onMount(() => {
-		let deck = new Reveal({ hash: true, navigationMode: "linear" });
-		deck.initialize();
+		loaded = true;
 	});
 </script>
 
-<div class="reveal">
-	<div class="slides">
-		<Slides />
-	</div>
-</div>
+Hello there
 
-{@html `<` + `style>${data.css}</style>`}
-
-<!-- TODO fix so you can see when no scroll -->
-<Footer />
+{#if loaded}
+	{#each slides as slide}
+		<a class="m-4 rounded bg-green-500 p-4 text-center" href={slide}>{slide}</a>
+	{/each}
+{/if}
