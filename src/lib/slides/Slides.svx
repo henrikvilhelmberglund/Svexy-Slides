@@ -1,7 +1,7 @@
 <script>
-	import F from "./F.svelte";
-	import Slide from "./Slide.svx";
-	import V from "./V.svx";
+	import F from "../F.svelte";
+	import Slide from "../Slide.svx";
+	import V from "../V.svx";
   import Seriously from "/src/lib/Seriously.svelte";
 
   let f = "fragment";
