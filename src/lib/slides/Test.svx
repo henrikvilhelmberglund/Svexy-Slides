@@ -1,0 +1,28 @@
+<script>
+  import Slide from "/src/lib/Slide.svx";
+</script>
+
+<Slide>
+  hello?
+</Slide>
+
+<Slide>
+  does it work?
+</Slide>
+
+<Slide>
+  ???
+</Slide>
+
+<Slide>
+  <!-- data-id required to auto animate between non matching elements -->
+  <div data-id="box" style="height: 50px; background: salmon;"></div>
+</Slide>
+
+<Slide color="hotpink">
+    <div data-id="box" style="height: 200px; background: blue;"></div>
+</Slide>
+
+<style>
+  
+</style>
