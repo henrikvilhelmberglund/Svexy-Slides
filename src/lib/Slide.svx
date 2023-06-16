@@ -1,8 +1,12 @@
 <script>
-  
+  export let id = null;
+  export let color = null;
 </script>
 
-<section data-auto-animate>
+<section data-auto-animate 
+data-auto-animate-id={id || null}
+data-background-color={color || null}
+>
 <slot>
 
 </slot>
