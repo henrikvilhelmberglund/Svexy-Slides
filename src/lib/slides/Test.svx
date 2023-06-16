@@ -1,5 +1,8 @@
 <script>
   import Slide from "/src/lib/Slide.svx";
+  import ShowMany from "$lib/ShowMany.svelte";
+	import Seriously from "$lib/Seriously.svelte";
+	import SeriouslyRaw from "$lib/Seriously.svelte?raw";
 </script>
 
 <Slide>
@@ -21,6 +24,19 @@
 
 <Slide color="hotpink">
     <div data-id="box" style="height: 200px; background: blue;"></div>
+</Slide>
+
+<Slide>
+  <ShowMany
+name={[
+{ name: "Seriously", comp: Seriously, raw: SeriouslyRaw, text: "This is an example of the code component. It is perfect! Does it work?" },
+]} />
+</Slide>
+
+<Slide color="hotpink">
+
+Hello there! I am text. Wow!
+
 </Slide>
 
 <style>
