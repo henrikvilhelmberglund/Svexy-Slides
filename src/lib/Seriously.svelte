@@ -3,7 +3,9 @@
 </script>
 
 <div>
-	<button on:click={() => (count += 1)} class="rounded bg-green-500 p-2 w-24 h-24 hover:bg-green-400">
+	<button
+		on:click={() => (count += 1)}
+		class="h-24 w-24 rounded bg-green-500 p-2 hover:bg-green-400">
 		{count}</button>
 	<slot />
 </div>
